@@ -26,8 +26,18 @@ h1 {
   font-size: 2rem;
 }
 
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
 i {
   color: $secondary-color;
+}
+
+img {
+  display: block;
 }
 
 // Main-nav
@@ -106,5 +116,16 @@ i {
     left: 0;
     opacity: 0.8;
     z-index: -1;
+  }
+}
+
+// Section A
+.services-a {
+  .services-content {
+    width: 100%;
+    .div-flex {
+      display: flex;
+      width: 100%;
+    }
   }
 }

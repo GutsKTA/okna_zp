@@ -6,6 +6,57 @@
 
 .text-primary {
   color: skyblue;
+  font-size: 3rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: skyblue;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 * {
@@ -33,8 +84,18 @@ h1 {
   font-size: 2rem;
 }
 
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
 i {
   color: skyblue;
+}
+
+img {
+  display: block;
 }
 
 #main-nav {
@@ -123,5 +184,16 @@ i {
   left: 0;
   opacity: 0.8;
   z-index: -1;
+}
+
+.services-a .services-content {
+  width: 100%;
+}
+
+.services-a .services-content .div-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
