@@ -60,54 +60,6 @@
   padding: 4rem 0 0 0;
 }
 
-.px-1 {
-  padding: 0 1rem;
-}
-
-.px-2 {
-  padding: 0 2rem;
-}
-
-.px-3 {
-  padding: 0 3rem;
-}
-
-.px-4 {
-  padding: 0 4rem;
-}
-
-.pyx-1 {
-  padding: 1rem;
-}
-
-.pyx-2 {
-  padding: 2rem;
-}
-
-.pyx-3 {
-  padding: 3rem;
-}
-
-.pyx-4 {
-  padding: 4rem;
-}
-
-.my-1 {
-  margin: 1rem 0;
-}
-
-.my-2 {
-  margin: 2rem 0;
-}
-
-.my-3 {
-  margin: 3rem 0;
-}
-
-.my-4 {
-  margin: 4rem 0;
-}
-
 .main-nav-white {
   background: rgba(255, 255, 255, 0.9);
   position: fixed;
@@ -143,6 +95,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -268,39 +222,37 @@ img {
   z-index: -1;
 }
 
-#services .services-content .div-flex {
+#services .services-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#services .services-content .div-flex img {
-  width: 50%;
+#services .services-content .div-flex {
+  padding: 2rem;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+
+#services .services-content .div-flex:hover {
+  background: skyblue;
 }
 
 #services .services-content .div-flex .serv-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  line-height: 1.7;
-  width: 50%;
+  text-align: center;
 }
 
 #services .services-content .div-flex .serv-text h2 {
-  font-size: 2rem;
-  padding: 0 2rem;
+  font-size: 1.5rem;
+  padding: 1.5rem 0 1.5rem 0;
 }
 
 #services .services-content .div-flex .serv-text p {
-  font-size: 20px;
-  padding: 2rem;
+  font-size: 18px;
+}
+
+#services .services-content .div-flex .serv-text img {
+  width: 100%;
 }
 
 #about .div-flex {
@@ -309,37 +261,54 @@ img {
   display: flex;
 }
 
-#about .div-flex .about-text h2 {
-  font-size: 2rem;
-  padding: 9rem 0 3rem 15rem;
-}
-
-#about .div-flex .about-text p {
-  font-size: 20px;
-  padding: 0 15rem;
-}
-
-#about .div-flex .about-text .sponsors {
-  background: #fff;
+#about .div-flex .about-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about .div-flex .about-area .about-text {
+  height: 50%;
+}
+
+#about .div-flex .about-area .about-text h2 {
+  font-size: 2rem;
+  padding: 4rem 0 2rem 5rem;
+}
+
+#about .div-flex .about-area .about-text p {
+  font-size: 20px;
+  padding: 0 5rem;
+}
+
+#about .div-flex .about-area .sponsors {
+  background: #fff;
+  height: 50%;
+}
+
+#about .div-flex .about-area .sponsors h2 {
+  font-size: 2rem;
+  padding: 4rem 0 2rem 5rem;
+}
+
+#about .div-flex .about-area .sponsors .sponsors-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#about .div-flex .about-text .sponsors div {
-  margin: 1rem;
-}
-
-#about .div-flex .about-text .sponsors div img {
+#about .div-flex .about-area .sponsors .sponsors-logo img {
   display: block;
-  padding: 2rem;
-  width: 60%;
+  width: 100%;
 }
 
 #contact {
@@ -352,6 +321,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1500px;
 }
 
 #contact .container .contact-form {
@@ -365,8 +335,24 @@ img {
 
 #contact .container .contact-form input,
 #contact .container .contact-form textarea {
-  padding: 0.5rem 0;
-  width: 100%;
+  padding: 0.5rem;
+  width: 98%;
+}
+
+#contact .container .contact-form textarea::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+#contact .container .contact-form textarea:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+#contact .container .contact-form textarea::-ms-input-placeholder {
+  font-size: 16px;
+}
+
+#contact .container .contact-form textarea::placeholder {
+  font-size: 16px;
 }
 
 #contact .container .contact-form .form-group {
@@ -376,7 +362,7 @@ img {
 
 #contact .container .contact-form .btn {
   margin: 0.75rem;
-  width: 100%;
+  width: 98%;
 }
 
 #contact .container .contact-us {
