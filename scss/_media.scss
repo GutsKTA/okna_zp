@@ -1,0 +1,211 @@
+// Tablets & Smaller
+@media screen and (max-width: 1050px) and (min-width: 501px) {
+  // Showcase
+  #showcase {
+    .container {
+      .showcase-content {
+        width: 100%;
+      }
+    }
+  }
+
+  // Section A
+  #services {
+    .services-content {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // Section B
+  #about {
+    .div-flex {
+      img {
+        display: none;
+      }
+
+      .about-area {
+        .about-text {
+          height: 70% !important;
+          margin: 1rem;
+
+          h2 {
+            padding: 1rem !important;
+            line-height: 2.2rem;
+          }
+          p {
+            padding: 1rem !important;
+          }
+        }
+        .sponsors {
+          height: 30% !important;
+          padding: 2rem;
+
+          h2 {
+            display: none;
+          }
+        }
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+
+  // Utilities
+  .bottom-line {
+    margin: 0 auto 2rem auto;
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  // Navbar
+  #main-nav {
+    padding: 0;
+
+    .container {
+      padding: 0;
+
+      .nav-content {
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+          margin: 0.5rem;
+        }
+
+        ul {
+          padding: 0;
+
+          li {
+            padding: 0.34rem;
+
+            a {
+              padding: 0.5rem;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Showcase
+  #showcase {
+    line-height: 1.2;
+
+    .container {
+      .showcase-content {
+        margin-top: 3rem;
+        width: 100%;
+      }
+    }
+  }
+
+  // Section A
+  #services {
+    .services-content {
+      flex-direction: column;
+      justify-content: center;
+
+      .div-flex {
+        border-bottom: 1px dotted $main-color;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  // Section B
+  #about {
+    .div-flex {
+      display: block;
+      margin: 2rem;
+      text-align: center;
+
+      img {
+        display: none;
+      }
+
+      .about-area {
+        display: block;
+
+        .about-text {
+          height: 100% !important;
+
+          h2 {
+            padding: 1rem !important;
+            line-height: 2.2rem;
+          }
+          p {
+            padding: 0 !important;
+          }
+        }
+
+        .sponsors {
+          display: none;
+        }
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  // Section C
+  #contact {
+    .container {
+      flex-direction: column;
+
+      .contact-form {
+        width: 100% !important;
+        padding-bottom: 2rem;
+        border-bottom: 1px dotted $main-color;
+
+        h2 {
+          text-align: center;
+        }
+
+        input,
+        textarea {
+          width: 100% !important;
+        }
+
+        .form-group {
+          margin: 0.6rem 0 0.6rem 0 !important;
+        }
+
+        .btn {
+          margin: 0 !important;
+        }
+      }
+
+      .contact-us {
+        width: 100% !important;
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  // Footer {
+  footer {
+    padding: 1rem !important;
+  }
+
+  // Utilities
+  .bottom-line {
+    margin: 0 auto 1rem auto;
+  }
+
+  .text-primary {
+    font-size: 2.2rem;
+  }
+
+  .text-secondary {
+    font-size: 2.2rem;
+  }
+}

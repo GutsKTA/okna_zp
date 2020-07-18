@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import "media";
 
 * {
   margin: 0;
@@ -74,9 +75,10 @@ img {
         a {
           display: block;
           padding: 1.75rem;
+          text-transform: uppercase;
 
           &:hover {
-            color: #fff;
+            color: $dark-color;
             transition: all 0.5s;
           }
         }
@@ -210,13 +212,23 @@ img {
         display: block;
         width: 50%;
       }
+
       input,
       textarea {
+        font-family: inherit;
         padding: 0.5rem;
         width: 98%;
       }
 
-      textarea::placeholder {
+      textarea {
+        min-height: 100px;
+        max-height: 500px;
+        resize: vertical;
+      }
+
+      textarea::placeholder,
+      input::placeholder {
+        font-family: inherit;
         font-size: 16px;
       }
 

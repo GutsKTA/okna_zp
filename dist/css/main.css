@@ -6,7 +6,7 @@
 }
 
 .text-primary {
-  color: skyblue;
+  color: #87ceeb;
   font-size: 3rem;
 }
 
@@ -19,7 +19,7 @@
   display: block;
   height: 2px;
   width: 8rem;
-  background: skyblue;
+  background: #87ceeb;
   margin: 0 auto 4rem auto;
 }
 
@@ -64,7 +64,7 @@
   background: rgba(255, 255, 255, 0.9);
   position: fixed;
   width: 100%;
-  border-bottom: 2px solid skyblue;
+  border-bottom: 2px solid #87ceeb;
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 3;
@@ -81,7 +81,7 @@
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: skyblue;
+  background: #87ceeb;
   border: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -90,6 +90,165 @@
 
 .btn:hover {
   opacity: 0.9;
+}
+
+@media screen and (max-width: 1050px) and (min-width: 501px) {
+  #showcase .container .showcase-content {
+    width: 100%;
+  }
+  #services .services-content {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #about .div-flex img {
+    display: none;
+  }
+  #about .div-flex .about-area .about-text {
+    height: 70% !important;
+    margin: 1rem;
+  }
+  #about .div-flex .about-area .about-text h2 {
+    padding: 1rem !important;
+    line-height: 2.2rem;
+  }
+  #about .div-flex .about-area .about-text p {
+    padding: 1rem !important;
+  }
+  #about .div-flex .about-area .sponsors {
+    height: 30% !important;
+    padding: 2rem;
+  }
+  #about .div-flex .about-area .sponsors h2 {
+    display: none;
+  }
+  #about img {
+    display: none;
+  }
+  .bottom-line {
+    margin: 0 auto 2rem auto;
+  }
+}
+
+@media (max-width: 500px) {
+  #main-nav {
+    padding: 0;
+  }
+  #main-nav .container {
+    padding: 0;
+  }
+  #main-nav .container .nav-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-nav .container .nav-content .logo {
+    margin: 0.5rem;
+  }
+  #main-nav .container .nav-content ul {
+    padding: 0;
+  }
+  #main-nav .container .nav-content ul li {
+    padding: 0.34rem;
+  }
+  #main-nav .container .nav-content ul li a {
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  #showcase {
+    line-height: 1.2;
+  }
+  #showcase .container .showcase-content {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  #services .services-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #services .services-content .div-flex {
+    border-bottom: 1px dotted #87ceeb;
+  }
+  #services .services-content .div-flex:last-child {
+    border-bottom: none;
+  }
+  #about .div-flex {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+  }
+  #about .div-flex img {
+    display: none;
+  }
+  #about .div-flex .about-area {
+    display: block;
+  }
+  #about .div-flex .about-area .about-text {
+    height: 100% !important;
+  }
+  #about .div-flex .about-area .about-text h2 {
+    padding: 1rem !important;
+    line-height: 2.2rem;
+  }
+  #about .div-flex .about-area .about-text p {
+    padding: 0 !important;
+  }
+  #about .div-flex .about-area .sponsors {
+    display: none;
+  }
+  #about img {
+    display: none;
+  }
+  #contact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .container .contact-form {
+    width: 100% !important;
+    padding-bottom: 2rem;
+    border-bottom: 1px dotted #87ceeb;
+  }
+  #contact .container .contact-form h2 {
+    text-align: center;
+  }
+  #contact .container .contact-form input,
+  #contact .container .contact-form textarea {
+    width: 100% !important;
+  }
+  #contact .container .contact-form .form-group {
+    margin: 0.6rem 0 0.6rem 0 !important;
+  }
+  #contact .container .contact-form .btn {
+    margin: 0 !important;
+  }
+  #contact .container .contact-us {
+    width: 100% !important;
+    padding-top: 2rem;
+  }
+  footer {
+    padding: 1rem !important;
+  }
+  .bottom-line {
+    margin: 0 auto 1rem auto;
+  }
+  .text-primary {
+    font-size: 2.2rem;
+  }
+  .text-secondary {
+    font-size: 2.2rem;
+  }
 }
 
 * {
@@ -129,7 +288,7 @@ h4 {
 }
 
 i {
-  color: skyblue;
+  color: #87ceeb;
 }
 
 img {
@@ -139,7 +298,7 @@ img {
 #main-nav {
   position: fixed;
   width: 100%;
-  border-bottom: 2px solid skyblue;
+  border-bottom: 2px solid #87ceeb;
   z-index: 3;
 }
 
@@ -171,16 +330,17 @@ img {
 }
 
 #main-nav .nav-content ul li:hover, #main-nav .nav-content ul li.current {
-  background: skyblue;
+  background: #87ceeb;
 }
 
 #main-nav .nav-content ul li a {
   display: block;
   padding: 1.75rem;
+  text-transform: uppercase;
 }
 
 #main-nav .nav-content ul li a:hover {
-  color: #fff;
+  color: #333;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -235,7 +395,7 @@ img {
 }
 
 #services .services-content .div-flex:hover {
-  background: skyblue;
+  background: #87ceeb;
 }
 
 #services .services-content .div-flex .serv-text {
@@ -335,23 +495,38 @@ img {
 
 #contact .container .contact-form input,
 #contact .container .contact-form textarea {
+  font-family: inherit;
   padding: 0.5rem;
   width: 98%;
 }
 
-#contact .container .contact-form textarea::-webkit-input-placeholder {
+#contact .container .contact-form textarea {
+  min-height: 100px;
+  max-height: 500px;
+  resize: vertical;
+}
+
+#contact .container .contact-form textarea::-webkit-input-placeholder,
+#contact .container .contact-form input::-webkit-input-placeholder {
+  font-family: inherit;
   font-size: 16px;
 }
 
-#contact .container .contact-form textarea:-ms-input-placeholder {
+#contact .container .contact-form textarea:-ms-input-placeholder,
+#contact .container .contact-form input:-ms-input-placeholder {
+  font-family: inherit;
   font-size: 16px;
 }
 
-#contact .container .contact-form textarea::-ms-input-placeholder {
+#contact .container .contact-form textarea::-ms-input-placeholder,
+#contact .container .contact-form input::-ms-input-placeholder {
+  font-family: inherit;
   font-size: 16px;
 }
 
-#contact .container .contact-form textarea::placeholder {
+#contact .container .contact-form textarea::placeholder,
+#contact .container .contact-form input::placeholder {
+  font-family: inherit;
   font-size: 16px;
 }
 
@@ -387,7 +562,7 @@ footer {
   background: #333;
   color: #f4f4f4;
   padding: 1.5rem;
-  border-top: 2px solid skyblue;
+  border-top: 2px solid #87ceeb;
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
