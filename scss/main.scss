@@ -1,6 +1,5 @@
 @import "config";
 @import "utilities";
-@import "media";
 
 * {
   margin: 0;
@@ -123,6 +122,8 @@ img {
 #services {
   .services-content {
     display: flex;
+    flex-direction: row;
+
     .div-flex {
       padding: 2rem;
       transition: all 0.7s ease-in;
@@ -262,3 +263,6 @@ footer {
   border-top: 2px solid $main-color;
   text-align: center;
 }
+
+// Import Media Queries
+@import "media";
