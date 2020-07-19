@@ -64,8 +64,6 @@ img {
       display: flex;
 
       li {
-        display: block;
-
         &:hover,
         &.current {
           background: $main-color;
@@ -249,6 +247,7 @@ img {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
       line-height: 2;
       width: 50%;
     }

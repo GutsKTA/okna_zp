@@ -76,7 +76,9 @@
         }
 
         ul {
+          justify-content: space-between;
           padding: 0;
+          width: 100%;
 
           li {
             padding: 0.34rem;
@@ -207,5 +209,139 @@
 
   .text-secondary {
     font-size: 2.2rem;
+  }
+}
+
+// Smaller Smartphones
+@media (max-width: 370px) {
+  // Navbar
+  #main-nav {
+    .container {
+      .nav-content {
+        ul {
+          li {
+            a {
+              padding: 0.2rem;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.3rem;
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  .py-2 {
+    padding: 1rem 0;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-height: 330px) {
+  // Navbar
+  #main-nav {
+    padding: 0;
+
+    .container {
+      padding: 0;
+
+      .nav-content {
+        .logo {
+          padding-left: 0.5rem;
+        }
+
+        ul {
+          li {
+            a {
+              padding: 0.8rem;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Section B
+  #about {
+    .div-flex {
+      .sponsors {
+        display: none;
+      }
+    }
+  }
+
+  // Section C
+  #contact {
+    .container {
+      flex-direction: column;
+
+      .contact-form {
+        width: 100%;
+        padding-bottom: 2rem;
+        border-bottom: 1px dotted $main-color;
+
+        h2 {
+          text-align: center;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+        }
+
+        .form-group {
+          margin: 0.6rem 0 0.6rem 0;
+        }
+
+        .btn {
+          margin: 0;
+        }
+      }
+
+      .contact-us {
+        width: 100%;
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .text-primary {
+    font-size: 2rem;
+  }
+
+  .text-secondary {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .pt-4 {
+    padding: 2rem 0 0 0;
+  }
+
+  .bottom-line {
+    margin: 0 auto 0.5rem auto;
   }
 }
