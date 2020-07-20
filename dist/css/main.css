@@ -256,13 +256,7 @@ img {
   width: 100%;
 }
 
-#about .div-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#about .div-flex .about-area {
+#about .about-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,31 +266,26 @@ img {
           flex-direction: column;
 }
 
-#about .div-flex .about-area .about-text {
-  height: 50%;
-}
-
-#about .div-flex .about-area .about-text h2 {
+#about .about-area .about-text h2 {
   font-size: 2rem;
   padding: 4rem 0 2rem 5rem;
 }
 
-#about .div-flex .about-area .about-text p {
+#about .about-area .about-text p {
   font-size: 20px;
-  padding: 0 5rem;
+  padding: 0 5rem 2rem 5rem;
 }
 
-#about .div-flex .about-area .sponsors {
+#about .about-area .sponsors {
   background: #fff;
-  height: 50%;
 }
 
-#about .div-flex .about-area .sponsors h2 {
+#about .about-area .sponsors h2 {
   font-size: 2rem;
-  padding: 4rem 0 2rem 5rem;
+  padding: 2rem 0 2rem 5rem;
 }
 
-#about .div-flex .about-area .sponsors .sponsors-logo {
+#about .about-area .sponsors .sponsors-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,8 +296,9 @@ img {
           align-items: center;
 }
 
-#about .div-flex .about-area .sponsors .sponsors-logo img {
+#about .about-area .sponsors .sponsors-logo img {
   display: block;
+  padding-bottom: 3rem;
   width: 100%;
 }
 
@@ -408,7 +398,7 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1025px) {
   #showcase .container .showcase-content {
     width: 100%;
   }
@@ -418,29 +408,24 @@ footer {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  #about .div-flex img {
-    display: none;
-  }
-  #about .div-flex .about-area .about-text {
-    height: 70%;
+  #about .about-area .about-text {
     margin: 1rem;
   }
-  #about .div-flex .about-area .about-text h2 {
+  #about .about-area .about-text h2 {
     padding: 1rem;
     line-height: 2.2rem;
   }
-  #about .div-flex .about-area .about-text p {
+  #about .about-area .about-text p {
     padding: 1rem;
   }
-  #about .div-flex .about-area .sponsors {
-    height: 30%;
+  #about .about-area .sponsors {
     padding: 2rem;
   }
-  #about .div-flex .about-area .sponsors h2 {
+  #about .about-area .sponsors h2 {
     display: none;
   }
-  #about img {
-    display: none;
+  #about .about-area .sponsors .sponsors-logo img {
+    padding-bottom: 0;
   }
   .bottom-line {
     margin: 0 auto 2rem auto;
@@ -504,31 +489,23 @@ footer {
   #services .services-content .div-flex:last-child {
     border-bottom: none;
   }
-  #about .div-flex {
+  #about .about-area {
     display: block;
-    margin: 2rem;
     text-align: center;
   }
-  #about .div-flex img {
-    display: none;
-  }
-  #about .div-flex .about-area {
-    display: block;
-  }
-  #about .div-flex .about-area .about-text {
+  #about .about-area .about-text {
     height: 100%;
   }
-  #about .div-flex .about-area .about-text h2 {
+  #about .about-area .about-text h2 {
     padding: 1rem;
     line-height: 2.2rem;
+    font-size: 1.7rem;
   }
-  #about .div-flex .about-area .about-text p {
-    padding: 0;
+  #about .about-area .about-text p {
+    padding: 1rem 0;
+    font-size: 1.2rem;
   }
-  #about .div-flex .about-area .sponsors {
-    display: none;
-  }
-  #about img {
+  #about .about-area .sponsors {
     display: none;
   }
   #contact .container {
@@ -586,33 +563,6 @@ footer {
   }
 }
 
-@media (max-height: 1050px) {
-  #about .div-flex img {
-    display: none;
-  }
-  #about .div-flex .about-area .about-text {
-    height: 70%;
-    margin: 1rem;
-  }
-  #about .div-flex .about-area .about-text h2 {
-    padding: 1rem;
-    line-height: 2.2rem;
-  }
-  #about .div-flex .about-area .about-text p {
-    padding: 1rem;
-  }
-  #about .div-flex .about-area .sponsors {
-    height: 30%;
-    padding: 2rem;
-  }
-  #about .div-flex .about-area .sponsors h2 {
-    display: none;
-  }
-  #about img {
-    display: none;
-  }
-}
-
 @media (max-height: 500px) {
   #main-nav .container {
     padding: 0;
@@ -624,7 +574,7 @@ footer {
     padding: 1.3rem 0.8rem;
     font-size: 16px;
   }
-  #about .div-flex .sponsors {
+  #about .sponsors {
     display: none;
   }
   #contact .container {

@@ -1,5 +1,5 @@
 // Tablets & Smaller
-@media (max-width: 1050px) {
+@media (max-width: 1025px) {
   // Showcase
   #showcase {
     .container {
@@ -19,36 +19,31 @@
 
   // Section B
   #about {
-    .div-flex {
-      img {
-        display: none;
-      }
+    .about-area {
+      .about-text {
+        margin: 1rem;
 
-      .about-area {
-        .about-text {
-          height: 70%;
-          margin: 1rem;
-
-          h2 {
-            padding: 1rem;
-            line-height: 2.2rem;
-          }
-          p {
-            padding: 1rem;
-          }
+        h2 {
+          padding: 1rem;
+          line-height: 2.2rem;
         }
-        .sponsors {
-          height: 30%;
-          padding: 2rem;
+        p {
+          padding: 1rem;
+        }
+      }
+      .sponsors {
+        padding: 2rem;
 
-          h2 {
-            display: none;
+        h2 {
+          display: none;
+        }
+
+        .sponsors-logo {
+          img {
+            padding-bottom: 0;
           }
         }
       }
-    }
-    img {
-      display: none;
     }
   }
 
@@ -123,38 +118,27 @@
 
   // Section B
   #about {
-    .div-flex {
+    .about-area {
       display: block;
-      margin: 2rem;
       text-align: center;
 
-      img {
+      .about-text {
+        height: 100%;
+
+        h2 {
+          padding: 1rem;
+          line-height: 2.2rem;
+          font-size: 1.7rem;
+        }
+        p {
+          padding: 1rem 0;
+          font-size: 1.2rem;
+        }
+      }
+
+      .sponsors {
         display: none;
       }
-
-      .about-area {
-        display: block;
-
-        .about-text {
-          height: 100%;
-
-          h2 {
-            padding: 1rem;
-            line-height: 2.2rem;
-          }
-          p {
-            padding: 0;
-          }
-        }
-
-        .sponsors {
-          display: none;
-        }
-      }
-    }
-
-    img {
-      display: none;
     }
   }
 
@@ -240,44 +224,6 @@
 }
 
 // Landscape
-// Tablets 1050
-@media (max-height: 1050px) {
-  // Section B
-  #about {
-    .div-flex {
-      img {
-        display: none;
-      }
-
-      .about-area {
-        .about-text {
-          height: 70%;
-          margin: 1rem;
-
-          h2 {
-            padding: 1rem;
-            line-height: 2.2rem;
-          }
-          p {
-            padding: 1rem;
-          }
-        }
-        .sponsors {
-          height: 30%;
-          padding: 2rem;
-
-          h2 {
-            display: none;
-          }
-        }
-      }
-    }
-    img {
-      display: none;
-    }
-  }
-}
-
 // Smartphones
 @media (max-height: 500px) {
   // Navbar
@@ -304,10 +250,8 @@
 
   // Section B
   #about {
-    .div-flex {
-      .sponsors {
-        display: none;
-      }
+    .sponsors {
+      display: none;
     }
   }
 
